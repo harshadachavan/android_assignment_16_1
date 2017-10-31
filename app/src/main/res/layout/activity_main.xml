@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.harshadachavan.asynctaskdemo.MainActivity">
+
+
+    <EditText
+        android:id="@+id/file_data_et"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/menu"
+        android:ems="10"
+        android:hint=" Enter Data"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/add_data_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/file_data_et"
+        android:layout_marginTop="39dp"
+        android:background="@android:color/darker_gray"
+        android:text="Add Data"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/file_data_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_data_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="No data Inseted in File"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/delete_data_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/file_data_tv"
+        android:layout_marginTop="39dp"
+        android:background="@android:color/darker_gray"
+        android:text="Delete File"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+</RelativeLayout>
